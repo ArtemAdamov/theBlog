@@ -15,8 +15,12 @@ class PostController extends Controller
 
     public function index()
     {
-        $posts= Post::latest()->get();
-        return view('post.index', compact('posts'));
+        $archives= Post::archives();
+        $posts= Post::latest()
+            ->filter(request(['month', 'year']))
+            ->get();
+
+        return view('post.index', compact('posts','archives'));
     }
 
     public function create()
