@@ -1,0 +1,109 @@
+@import "colors"
+
+html
+  font-size: 14px
+  box-sizing: border-box
+  height: 100%
+body
+  position: relative
+  padding-bottom: 136px
+  min-height: 100%
+  background: $body-bg
+  color: $text-color
+  font-family: 'Roboto', sans-serif
+  margin: 0
+
+.active-color
+  color: $active-color
+  text-decoration: none
+.new-button
+  position: relative
+  max-width: 400px
+  min-width: 150px
+  padding: 1em 0
+  margin: 1em 0
+  border: none
+  border-radius: 3px
+  border-bottom: solid 3px #2F6DB5
+  background-color: $active-color
+  color: #F5F5F5
+  &:hover
+    transform: translateY(3px)
+    transition: all 0.2s
+.form-group
+  margin-bottom: 1rem
+  padding: 0
+
+.form-text
+  width: 100%
+  border-radius: 3px
+  min-height: 10rem
+  background-color: #F5F5F5
+.header-logo
+ padding-left: 383px
+ font-size: 2.3em
+
+.login
+ margin-left: auto
+ margin-right: 20px
+ text-align: right
+ display: flex
+
+.logo
+ height: 83px
+ width: 80px
+
+.top-nav
+  padding: 10px
+  &_menu
+    margin-top: 1px
+    margin-bottom: 1px
+    list-style: none
+    padding-left: 4px
+    display: flex
+    li
+     margin: 32px
+
+.sidebar
+  text-align: right
+  max-width: 7.5em
+  min-height: 2em
+  margin-left: auto
+  margin-right: 0
+
+.archives
+  padding: 0
+  li
+    list-style: none
+
+.elsewhere
+  padding: 0
+  li
+    list-style: none
+
+.blog-footer
+  position: absolute
+  bottom: 0
+  width: 100%
+  background-color: #000
+
+
+.border_footer
+  width: auto
+  margin-left: auto
+  margin-right: auto
+  padding: 0 15px
+  min-width: 1024px
+  max-width: 1140px
+
+.footer_elsewhere
+  max-width: 7em
+  min-height: 2em
+  margin-left: auto
+  margin-right: 0
+  text-align: right
+  padding: 0 15px
+
+.footer-laravel
+  text-align: left
+  padding: 0 15px

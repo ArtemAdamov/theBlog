@@ -9,27 +9,27 @@
     <title>First Blog</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
     <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+        @include('layouts.nav')
 
-@include('layouts.nav')
-
-    <main role="main" class="container">
         <div class="row">
+            @yield('content')
+            @include('layouts.sidebar')
+        </div>
 
- @yield('content')
+    </div><!-- /.container -->
 
+    @include('layouts.footer')
 
-        @include('layouts.sidebar')
-    </div><!-- /.row -->
+    <script>src ="https://code.jquery.com/jquery-3.3.1.slim.min.js"</script>
+    <script>window.jQuery || document.write('<script src= "js/jquery-3.3.1.slim.min.js"><\/script>')</script>
 
-
-    </main><!-- /.container -->
-@include('layouts.footer')
 </body>
-
+</html>

@@ -1,21 +1,14 @@
-<aside class="col-md-4 blog-sidebar">
+<aside class="col-md-4">
 
-    <div class="p-3">
-        <h4 class="font-italic">Archives</h4>
-        <ol class="list-unstyled mb-0">
+    <div class="sidebar">
+        <h4>Archives</h4>
+        <ol class="archives">
+
             @foreach($archives as $stats)
-                <li><a href="/?month={{$stats['month']}}&year={{$stats['year']}}">
+                <li><a class="active-color" href="/?month={{$stats['month']}}&year={{$stats['year']}}">
                         {{$stats['month']}} {{$stats['year']}} </a></li>
                 @endforeach
         </ol>
     </div>
 
-    <div class="p-3">
-        <h4 class="font-italic">Elsewhere</h4>
-        <ol class="list-unstyled">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ol>
-    </div>
 </aside><!-- /.blog-sidebar -->

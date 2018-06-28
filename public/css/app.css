@@ -1,159 +1,145 @@
-blog-header {
-  line-height: 1;
-  border-bottom: 1px solid #e5e5e5;
+html {
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
 }
 
-.blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: 2.25rem;
+body {
+  position: relative;
+  padding-bottom: 136px;
+  min-height: 100%;
+  background: #102026;
+  color: #C3CCDB;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
-.blog-header-logo:hover {
+.active-color {
+  color: #4A90E2;
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-}
-
-.display-4 {
-  font-size: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .display-4 {
-    font-size: 3rem;
-  }
-}
-
-.nav-scroller {
+.new-button {
   position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
+  max-width: 400px;
+  min-width: 150px;
+  padding: 1em 0;
+  margin: 1em 0;
+  border: none;
+  border-radius: 3px;
+  border-bottom: solid 3px #2F6DB5;
+  background-color: #4A90E2;
+  color: #F5F5F5;
 }
 
-.nav-scroller .nav {
-  display: -ms-flexbox;
+.new-button:hover {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.form-text {
+  width: 100%;
+  border-radius: 3px;
+  min-height: 10rem;
+  background-color: #F5F5F5;
+}
+
+.header-logo {
+  padding-left: 383px;
+  font-size: 2.3em;
+}
+
+.login {
+  margin-left: auto;
+  margin-right: 20px;
+  text-align: right;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 }
 
-.nav-scroller .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
+.logo {
+  height: 83px;
+  width: 80px;
 }
 
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
+.top-nav {
+  padding: 10px;
 }
 
-.flex-auto {
-  -ms-flex: 0 0 auto;
-  -webkit-box-flex: 0;
-          flex: 0 0 auto;
+.top-nav_menu {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  list-style: none;
+  padding-left: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.h-250 {
-  height: 250px;
+.top-nav_menu li {
+  margin: 32px;
 }
 
-@media (min-width: 768px) {
-  .h-md-250 {
-    height: 250px;
-  }
+.sidebar {
+  text-align: right;
+  max-width: 7.5em;
+  min-height: 2em;
+  margin-left: auto;
+  margin-right: 0;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
+.archives {
+  padding: 0;
 }
 
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.archives li {
+  list-style: none;
 }
 
-.box-shadow {
-  -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+.elsewhere {
+  padding: 0;
 }
 
-/*
- * Blog name and description
- */
-
-.blog-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400;
+.elsewhere li {
+  list-style: none;
 }
-
-.blog-description {
-  font-size: 1.1rem;
-  color: #999;
-}
-
-@media (min-width: 40em) {
-  .blog-title {
-    font-size: 3.5rem;
-  }
-}
-
-/* Pagination */
-
-.blog-pagination {
-  margin-bottom: 4rem;
-}
-
-.blog-pagination > .btn {
-  border-radius: 2rem;
-}
-
-/*
- * Blog posts
- */
-
-.blog-post {
-  margin-bottom: 4rem;
-}
-
-.blog-post-title {
-  margin-bottom: .25rem;
-  font-size: 2.5rem;
-}
-
-.blog-post-meta {
-  margin-bottom: 1.25rem;
-  color: #999;
-}
-
-/*
- * Footer
- */
 
 .blog-footer {
-  padding: 2.5rem 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
 }
 
-.blog-footer p:last-child {
-  margin-bottom: 0;
+.border_footer {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  min-width: 1024px;
+  max-width: 1140px;
+}
+
+.footer_elsewhere {
+  max-width: 7em;
+  min-height: 2em;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  padding: 0 15px;
+}
+
+.footer-laravel {
+  text-align: left;
+  padding: 0 15px;
 }
 
